@@ -3,6 +3,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const colors = require('colors');
 const fileupload = require('express-fileupload');
+const cookieParser = require('cookie-parser');
 // Error handler middleware
 const errorHandler = require('./middleware/error');
 //This is an example middleware
@@ -25,6 +26,9 @@ const app = express();
 
 // Body parser
 app.use(express.json());
+
+// Cookie parser
+app.use(cookieParser());
 
 // Activate/use logger middleware
 //app.use(logger);
