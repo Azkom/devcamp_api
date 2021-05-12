@@ -2,4 +2,4 @@ node_modules
 config/config.env
 resources
 background-software
-
+package-lock.json
